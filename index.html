@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecosystem Services in Economics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Latin Modern Roman', serif; 
+            font-size: 16px;      
+            line-height: 1.6;    
+            color: #222;          
+            margin: 40px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Latin Modern Roman', serif; 
+            color: #2c3e50;
+            font-weight: 700;      
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin-top: 1px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px #aaa;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 2em;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 60px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        nav li {
+            margin: 8px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            display: block;
+            margin: 30px auto;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #d1e7dd;
+        }
+
+        iframe {
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 1000px;
+            height: 600px;
+            border-radius: 8px;
+            display: block;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="top">Economic research on ecosystemic services: a bibliometric approach</h1>
+
+<nav>
+    <h3>Table of contents</h3>
+    <ul>
+        <li><a href="#bigpicture">1. Big picture</a></li>
+        <li><a href="#clusters">2. Temporal evolution of clusters</a></li>
+        <li><a href="#concepts">3. Temporal evolution of concepts</a></li>
+        <li><a href="#authors">4. First authors and journals</a></li>
+    </ul>
+</nav>
+
+<section id="bigpicture">
+    <h2>1. Let's have a look at the big picture</h2>
+
+    <h3>Evolution of publications over time</h3>
+    <p>This figure shows the rapid growth of economic literature on ecosystem services since the mid-2000s.</p>
+    <img src="Figures en python/Evolution temporelle 1971-2025.png">
+    <p>Source: <i>Web of Science</i> (search conducted in January 2026)</p>
+    <p>Since 1975, the number of publications on ecosystem services has increased dramatically: the first decade (1975–1984) had 33 articles, the next (1985–1994) 131, followed by 1,060 for 1995–2004, 13,711 for 2005–2014, and finally 66,309 for 2015–2024, showing an exponential growth of scientific interest in this topic.</p>
+</section>
+
+<section id="clusters">
+    <h2>2. Temporal evolution of clusters</h2>
+    <p>Using VOSviewer, we can visualize the main clusters in ecosystem services research over time in terms of co-citations. We clearly observe two main communities: one developed in Europe and another in Asia.</p>
+    <img src="Figures en python/Map citation.png">
+    <p>The overlay visualization highlights a significant paradigm shift in ecosystem services research between 2016 and 2022. While the "foundational" period (shaded in dark blue and purple) was largely dominated by Western scholars, the more recent period (2020–2022, shaded in yellow) shows a massive surge in productivity from Asian institutions.</p>
+    <img src="Figures en python/Map 2016-2022.png">
+</section>
+
+<section id="concepts">
+    <h2>3. Temporal evolution of concepts</h2>
+    <p>The overlay visualization highlights how the vocabulary evolved from biodiversity and conservation to valuation and market-based approaches.</p>
+</section>
+
+<section id="authors">
+    <h2>4. First authors and journals</h2>
+    <p>Tables of early contributors and journals can be consulted below:</p>
+    <p>413 authors have published at least 50 articles. Let's look at the top 20 in terms of first publication year. In particular, Costanza is among the most prolific early contributors.</p>
+
+    <iframe src="Figures en python/top20_authors.html"></iframe>
+    <p>Source: <i>Web of Science</i> (search conducted in January 2026)</p>
+
+    <iframe src="Figures en python/top20_journals.html"></iframe>
+    <p>Source: <i>Web of Science</i> (search conducted in January 2026)</p>
+
+    <p>The earliest journals publishing on ecosystem services (among those with at least 50 publications on this topic) were <i>Science</i> (1971) and <i>Nature</i> (1973). Over the period, 268 journals published at least 50 articles on ecosystem services.
+    From the mid-1970s onward, more specialized journals began publishing extensively such as <i>Biological Conservation</i> (1973) and <i>Environmental Management</i> (1977).</p>
+</section>
+
+</body>
+</html>
